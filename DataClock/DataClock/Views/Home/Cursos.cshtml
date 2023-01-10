@@ -1,0 +1,42 @@
+﻿@model IEnumerable<DataClock.Models.Curso>
+
+@{ 
+    ViewData["Title"] = "Meus Cursos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Cursos que ja fiz</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CargaHoraria  )
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    
+    @foreach(var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descricao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CargaHoraria)
+                    </td>
+                </tr>
+            }
+    <tbody>
+</table>

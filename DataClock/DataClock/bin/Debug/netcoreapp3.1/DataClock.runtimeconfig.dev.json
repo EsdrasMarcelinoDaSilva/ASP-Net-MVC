@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\gilma\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\gilma\\.nuget\\packages"
+    ]
+  }
+}
